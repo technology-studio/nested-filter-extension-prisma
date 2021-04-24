@@ -616,6 +616,11 @@
   dependencies:
     "@txo/config-manager" "^3.0.1"
 
+"@txo-peer-dep/nested-filter-prisma@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/nested-filter-prisma/-/nested-filter-prisma-1.0.0.tgz#84130f1024b1d6469ef008d3df1d6921124962c9"
+  integrity sha512-uADZaXcI6FxsNFj6NclO+XEdozL4upnxGuVtDLYnuEYjCEvp+q2hfdkk9ceyWhyhDK73HvqeF0Kz7nT0ooS1wg==
+
 "@txo/config-manager@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.0.1.tgz#cf6bc6047a67f22eeae763713d28e4c3b446132c"
@@ -2549,6 +2554,11 @@ graceful-fs@^4.1.2, graceful-fs@^4.2.3, graceful-fs@^4.2.4:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
+
+graphql@^15.5.0:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
+  integrity sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
 
 growly@^1.3.0:
   version "1.3.0"

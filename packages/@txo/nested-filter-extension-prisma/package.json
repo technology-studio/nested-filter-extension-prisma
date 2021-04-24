@@ -23,8 +23,8 @@
     "build:watch:lib": "yarn tsc --watch",
     "prepare": "yarn build"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
+    "@txo-peer-dep/nested-filter-prisma": "^1.0.0"
   }
 }
