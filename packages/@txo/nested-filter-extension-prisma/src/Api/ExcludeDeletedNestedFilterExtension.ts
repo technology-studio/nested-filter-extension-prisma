@@ -16,7 +16,7 @@ declare module '@txo-peer-dep/nested-filter-prisma' {
   }
 }
 
-export class ExcludedDeletedNestedFilterExtension implements Extension {
+export class ExcludeDeletedNestedFilterExtension implements Extension {
   _defaultOptions?: Options
   constructor (defaultOptions?: Options) {
     this._defaultOptions = defaultOptions
