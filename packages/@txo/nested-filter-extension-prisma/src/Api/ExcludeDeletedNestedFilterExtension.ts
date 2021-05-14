@@ -12,20 +12,25 @@ type Options = {
 
 declare module '@txo-peer-dep/nested-filter-prisma' {
   interface ExtensionOptions {
-    excludeDeleted: boolean,
+    deletedDateTimeValue?: string | null,
+    excludeDeleted?: boolean,
   }
 }
 
 export class ExcludeDeletedNestedFilterExtension implements Extension {
   _defaultOptions?: Options
-  constructor (defaultOptions?: Options) {
+  constructor (defaultOptions?: Partial<Options>) {
     this._defaultOptions = defaultOptions
   }
 
   populateConditionList = (conditionList: Condition[], extensionOptions?: ExtensionOptions): void => {
     if (extensionOptions?.excludeDeleted ?? this._defaultOptions?.excludeDeleted) {
       conditionList.push({
-        deletedDateTime: null,
+        deletedDateTime: extensionOptions?.deletedDateTimeValue !== undefined
+          ? extensionOptions?.deletedDateTimeValue
+          : this._defaultOptions?.excludeDeleted !== undefined
+            ? this._defaultOptions?.excludeDeleted
+            : null,
       })
     }
   }
