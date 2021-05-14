@@ -7,6 +7,7 @@
 import { Extension, ExtensionOptions, Condition } from '@txo-peer-dep/nested-filter-prisma'
 
 type Options = {
+  deletedDateTimeValue?: string | null,
   excludeDeleted?: boolean,
 }
 
