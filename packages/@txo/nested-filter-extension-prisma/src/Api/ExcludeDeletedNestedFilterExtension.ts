@@ -29,8 +29,8 @@ export class ExcludeDeletedNestedFilterExtension implements Extension {
       conditionList.push({
         deletedDateTime: extensionOptions?.deletedDateTimeValue !== undefined
           ? extensionOptions?.deletedDateTimeValue
-          : this._defaultOptions?.excludeDeleted !== undefined
-            ? this._defaultOptions?.excludeDeleted
+          : this._defaultOptions?.deletedDateTimeValue !== undefined
+            ? this._defaultOptions?.deletedDateTimeValue
             : null,
       })
     }
